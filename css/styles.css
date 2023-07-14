@@ -48,9 +48,23 @@ button {
 }
 
 .container {
-    width: 1158px;
-    padding:0 15px;
+    outline:2px solid #31D0AA;
+    min-width: 320px;
+    max-width: 428px;
+    padding:0 16px;
     margin:0 auto;
+}
+@media screen and (min-width:768px){
+    .container{
+        max-width: 768px;
+    }
+}
+
+@media screen and (min-width:1158px){
+    .container{
+        max-width: 1158px;   
+        padding:0 156px;
+    }
 }
 .link {
     text-decoration: none;
@@ -62,7 +76,7 @@ button {
 
                     /* Header */  
 .header {
-    max-height: 72px;
+    max-height: 70px;
     border: 1px solid #E7E9FC;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
  } 
@@ -92,9 +106,10 @@ button {
 }
 /* navigation */
 .nav-list {
-    display: flex;
+    display: none;
+    /* display: flex;
     align-items: center;
-    gap: 40px;
+    gap: 40px; */
 
 }
 .nav-item{
@@ -202,19 +217,90 @@ button {
 }
                         /*  */
 
+.title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+    text-align: center;
+    margin-bottom: 72px;
+    /* font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: capitalize;
+    margin-bottom: 8px; */
+}
+.section {
+    padding:96px 0;
+}
+@media screen and (min-width: 1158px) {
+  .section {
+    padding:120px 0;
+  }
+}
                 /* benefits section */
 
 .benefits-section{
-    padding: 120px 0;
 }
 .benefits-list{
+    
+}
+.benefits-item {
+    max-width: 396px;
+}
+.benefits-item:not(:last-child){
+    margin-bottom: 72px;
+}
+@media screen (max-width:1158px) {
+    
+     .benefits-icon-box{
+    display: none;
+    }
+    .benefits-icon {
+        display: none;
+    }
+}
+
+.benefits-title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    padding-bottom: 8px;
+}
+.benefits-text{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px; 
+    letter-spacing: 0.02em;
+    font-style: normal;
+    color:var(--body-text-color);
+}
+@media only (min-width:768px){
+    .benefits-list {
+        display:flex;
+        flex-wrap:wrap;
+        gap:24px;
+        
+    }
+    .benefits-item{
+        text-align: left;
+        /* flex-basis:calc((100%-24px)/2); */
+        max-width: 356px;
+    }
+   
+}
+
+@media only (min-width:1158px){
+
+    .benefits-list{
     display: flex;
-    gap: 24px;
-}
-.text-section {
-    width: calc((100% - 72px) / 4);
-}
-.benefits-icon-box{
+    gap: 72px;
+    }
+    .benefits-item {
+    max-width: calc((100% - 72px) / 4);
+    }
+    .benefits-icon-box{
     background-color: var(--cloud-color);
     border-radius: 4px;
     margin-bottom: 8px;
@@ -224,28 +310,18 @@ button {
     align-items: center;
     justify-content: center;
 }
-.benefits-icon{
+    .benefits-icon{
 
 }
-.title {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
-    text-transform: capitalize;
-    margin-bottom: 8px;
 }
-.benefits-text{
-    letter-spacing: 0.02em;
-    color:var(--body-text-color);
-}
-
 
                 /* What are we doing */
 
 .wawd-section {
-    padding-bottom: 120px;
+    display: none;
+    /* padding-bottom: 120px; */
 }
-.wawd-title {
+/* .wawd-title {
     color: var(--main-grey-color);
     text-align: center;
     font-weight: 700;
@@ -257,51 +333,56 @@ button {
 .wawd-list {
     display: flex;
     gap: 24px;
-}
+} */
 
                     /* Team */
 
 
 .team-section {
     background-color: var(--cloud-color);
-    padding: 120px 0;
 }
 .team-list {
-    display: flex;
-    gap: 24px;
-    justify-content: center;
+    
 }
-.team-card {
-    width: calc((100% - 72px) / 4);
+.team-card-item {
+    object-fit:contain;
+    /* width: calc((100% - 72px) / 4); 
+    min-height: 348px;*/
+     /* width: 264px;
+    min-height: 428px; */
+    margin: 0 auto;
     border-radius: 0px 0px 4px 4px;
-    min-height: 348px;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
+.team-card-item:not(:last-child){
+    margin-bottom: 72px;
+}
 
-.team-details {
+.team-card-details {
     text-align: center;
     padding: 32px 0;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
     background-color: #FFF;
 }
-.team-title {
+.team-name-title {
     color:var(--main-grey-color);
     text-align: center;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;
     text-transform: capitalize;
-    margin-bottom: 72px;
+    margin-bottom: 8px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.4px;
 }
 .team-text {
-    color: #434455;
+    margin-bottom: 8px;
+    font-weight: 400;
 }
 .team-social-medias{
     display: flex;
     gap: 24px;
     justify-content: center;
-    margin-top: 8px;
 }
 .team-social-item{
 }
@@ -324,18 +405,48 @@ button {
     background-color: var(--ocean-color);
 }
 
+@media (min-width:768px){
+    .team-section{
+    }
+    .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:24px;
+    }
+
+    .team-card-item{
+        margin: 0;
+        width:calc((100%-24)/2);
+    }
+}
+@media (min-width:1158px){
+    
+    .team-list{
+        margin: 0;
+        display: flex;
+        gap: 24px;
+        justify-content: center;}
+}
+
                     /* Customers */
 
-.customers{
-    padding: 120px 0;
+.customers-section{
 }
 .customers-list{
     display:flex;
-    justify-content:space-between;
-    gap:24px; 
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    flex-basis: calc((100%-16)/2);
+    /* justify-content:space-between;
+    gap:24px;  */
 }
 .cust-item{
     transition: color var(--animation), border-color var(--animation);
+}
+.cust-item:not(:nth-child(5):nth-child(6)){
+    margin-bottom: 72px;
 }
 .cust-link{
     width: 168px;
@@ -795,5 +906,5 @@ button {
 
 .send-btn {
     line-height: 1.5;
-    transition: background-color var(--animation);
+    transition: background-color var(--animation)
 }
