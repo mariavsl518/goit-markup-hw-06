@@ -28,10 +28,11 @@
   <body>
     <header class="header">
       <div class="header-container container">
-        <!-- <nav class="nav-line">
+        <nav class="nav-line">
           <a class="link logo" href="./index.html"
             >Web<span class="logo-grey">Studio</span></a
           >
+          <!-- desktop menu -->
           <ul class="list nav-list">
             <li class="nav-item">
               <a class="link nav-link active" href="./index.html">Studio</a>
@@ -45,7 +46,7 @@
           </ul>
         </nav>
         <address class="contacts">
-          <ul class="list nav-list">
+          <ul class="list nav-contacts-list">
             <li class="contacts-item">
               <a class="link contacts-link" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
@@ -57,7 +58,84 @@
               >
             </li>
           </ul>
-        </address> -->
+        </address>
+        <!-- modal menu -->
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="burger-icon" width="32" height="22">
+            <use href="./images/icons.svg#burger-menu"></use>
+          </svg>
+        </button>
+
+        <div class="menu-container js-menu-container" id="mobile-menu">
+          <button class="close-btn js-close-menu">
+            <svg class="close-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+
+          <ul class="mobile-menu">
+            <li class="mobile-nav-item">
+              <a class="link mobile-nav-link active" href="./index.html"
+                >Studio</a
+              >
+            </li>
+            <li class="mobile-nav-item">
+              <a class="link mobile-nav-link" href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="mobile-nav-item">
+              <a class="link mobile-nav-link" href="">Contacts</a>
+            </li>
+          </ul>
+
+          <address class="mobile-contacts">
+            <a class="link mobile-tel-contacts" href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
+
+            <a
+              class="link mobile-mail-contacts"
+              href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+
+            <ul class="team-social-media-list mobile-media-list">
+              <li class="team-social-item">
+                <a class="team-icon-link" href="instagram.com"
+                  ><svg class="team-icons" width="16" height="16">
+                    <use href="./images/icons.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="team-social-item">
+                <a class="team-icon-link" href="twitter.com"
+                  ><svg class="team-icons" width="16" height="16">
+                    <use href="./images/icons.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="team-social-item">
+                <a class="team-icon-link" href="facebook.com">
+                  <svg class="team-icons" width="16" height="16">
+                    <use href="./images/icons.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="team-social-item">
+                <a class="team-icon-link" href=""
+                  ><svg class="team-icons" width="16" height="16">
+                    <use href="./images/icons.svg#linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </address>
+        </div>
       </div>
     </header>
 
@@ -140,7 +218,11 @@
           <ul class="list wawd-list">
             <li class="image-card">
               <img
-                src="./images/comp.jpg"
+                src="./images/webstudio/img-1.jpg"
+                srcset="
+                  ./images/webstudio/img-1.jpg    1x,
+                  ./images/webstudio/img-1@2x.jpg 2x
+                "
                 alt="computer"
                 width="360"
                 height="300"
@@ -148,7 +230,11 @@
             </li>
             <li class="image-card">
               <img
-                src="./images/screens.jpg"
+                src="./images/webstudio/img-2.jpg"
+                srcset="
+                  ./images/webstudio/img-2.jpg    1x,
+                  ./images/webstudio/img-2@2x.jpg 2x
+                "
                 alt="screenshots"
                 width="360"
                 height="300"
@@ -156,7 +242,11 @@
             </li>
             <li class="image-card">
               <img
-                src="./images/tel.jpg"
+                src="./images/webstudio/img-3.jpg"
+                srcset="
+                  ./images/webstudio/img-3.jpg    1x,
+                  ./images/webstudio/img-3@2x.jpg 2x
+                "
                 alt="phone"
                 width="360"
                 height="300"
@@ -174,7 +264,11 @@
           <ul class="list team-list">
             <li class="team-card-item">
               <img
-                src="./images/img.jpg"
+                src="./images/webstudio/team-1.jpg"
+                srcset="
+                  ./images/webstudio/team-1.jpg    1x,
+                  ./images/webstudio/team-1@2x.jpg 2x
+                "
                 alt="Mark Guerrero"
                 width="264"
                 height="260"
@@ -216,7 +310,11 @@
             </li>
             <li class="team-card-item">
               <img
-                src="./images/img-2.jpg"
+                src="./images/webstudio/team-2.jpg"
+                srcset="
+                  ./images/webstudio/team-2.jpg    1x,
+                  ./images/webstudio/team-2@2x.jpg 2x
+                "
                 alt="Tom Ford"
                 width="264"
                 height="260"
@@ -258,7 +356,11 @@
             </li>
             <li class="team-card-item">
               <img
-                src="./images/img-3.jpg"
+                src="./images/webstudio/team-3.jpg"
+                srcset="
+                  ./images/webstudio/team-3.jpg    1x,
+                  ./images/webstudio/team-3@2x.jpg 2x
+                "
                 alt="Camila Garcia"
                 width="264"
                 height="260"
@@ -300,7 +402,11 @@
             </li>
             <li class="team-card-item">
               <img
-                src="./images/img-4.jpg"
+                src="./images/webstudio/team-4.jpg"
+                srcset="
+                  ./images/webstudio/team-4.jpg    1x,
+                  ./images/webstudio/team-4@2x.jpg 2x
+                "
                 alt="Daniel Wilson"
                 width="264"
                 height="260"
@@ -568,5 +674,13 @@
 
     <!-- skript -->
     <script src="./js/modal.js"></script>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>

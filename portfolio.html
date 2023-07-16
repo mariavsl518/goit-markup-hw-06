@@ -46,7 +46,7 @@
           </ul>
         </nav>
         <address class="contacts">
-          <ul class="list nav-list">
+          <ul class="list nav-contacts-list">
             <li>
               <a class="link nav-link" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
@@ -59,6 +59,82 @@
             </li>
           </ul>
         </address>
+
+        <!-- modal menu -->
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="burger-icon" width="32" height="22">
+            <use href="./images/icons.svg#burger-menu"></use>
+          </svg>
+        </button>
+
+        <div class="menu-container js-menu-container" id="mobile-menu">
+          <button class="close-btn js-close-menu">
+            <svg class="close-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+
+          <ul class="mobile-menu">
+            <li class="mobile-nav-item">
+              <a class="link mobile-nav-link" href="./index.html">Studio</a>
+            </li>
+            <li class="mobile-nav-item">
+              <a class="link mobile-nav-link active" href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="mobile-nav-item">
+              <a class="link mobile-nav-link" href="">Contacts</a>
+            </li>
+          </ul>
+
+          <address class="mobile-contacts">
+            <a class="link mobile-tel-contacts" href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
+
+            <a
+              class="link mobile-mail-contacts"
+              href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+
+            <ul class="team-social-media-list mobile-media-list">
+              <li class="team-social-item">
+                <a class="team-icon-link" href="instagram.com"
+                  ><svg class="team-icons" width="16" height="16">
+                    <use href="./images/icons.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="team-social-item">
+                <a class="team-icon-link" href="twitter.com"
+                  ><svg class="team-icons" width="16" height="16">
+                    <use href="./images/icons.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="team-social-item">
+                <a class="team-icon-link" href="facebook.com">
+                  <svg class="team-icons" width="16" height="16">
+                    <use href="./images/icons.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="team-social-item">
+                <a class="team-icon-link" href=""
+                  ><svg class="team-icons" width="16" height="16">
+                    <use href="./images/icons.svg#linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </address>
+        </div>
       </div>
     </header>
     <main>
@@ -92,10 +168,14 @@
               <a class="link image-link" href="">
                 <div class="box">
                   <img
-                    src="./images/purple-screens.jpg"
+                    src="./images/portfolio/portfolio-1@1x.jpg"
+                    srcset="
+                      ./images/portfolio/portfolio-1@1x.jpg 1x,
+                      ./images/portfolio/portfolio-1@2x.jpg 2x
+                    "
                     alt="app screenshots"
-                    width="360"
-                    height="300"
+                    width="396"
+                    height="280"
                   />
 
                   <p class="hover-text">
@@ -115,10 +195,14 @@
               <a class="link image-link" href="">
                 <div class="box">
                   <img
-                    src="./images/qrcode.jpg"
+                    src="./images/portfolio/portfolio-2@1x.jpg"
+                    srcset="
+                      ./images/portfolio/portfolio-2@1x.jpg 1x,
+                      ./images/portfolio/portfolio-2@2x.jpg 2x
+                    "
                     alt="qr code using"
-                    width="360"
-                    height="300"
+                    width="396"
+                    height="280"
                   />
 
                   <p class="hover-text">
@@ -139,10 +223,14 @@
               <a class="link image-link" href="">
                 <div class="box">
                   <img
-                    src="./images/desktop.jpg"
+                    src="./images/portfolio/portfolio-3@1x.jpg"
+                    srcset="
+                      ./images/portfolio/portfolio-3@1x.jpg 1x,
+                      ./images/portfolio/portfolio-3@2x.jpg 2x
+                    "
                     alt="laptop and smartphone"
-                    width="360"
-                    height="300"
+                    width="396"
+                    height="280"
                   />
 
                   <p class="hover-text">
@@ -165,10 +253,14 @@
               <a class="link image-link" href="">
                 <div class="box">
                   <img
-                    src="./images/car.jpg"
+                    src="./images/portfolio/portfolio-4@1x.jpg"
+                    srcset="
+                      ./images/portfolio/portfolio-4@1x.jpg 1x,
+                      ./images/portfolio/portfolio-4@2x.jpg 2x
+                    "
                     alt="man driving a car"
-                    width="360"
-                    height="300"
+                    width="396"
+                    height="280"
                   />
 
                   <p class="hover-text">
@@ -189,10 +281,14 @@
               <a class="link image-link" href="">
                 <div class="box">
                   <img
-                    src="./images/phone.jpg"
+                    src="./images/portfolio/portfolio-5@1x.jpg"
+                    srcset="
+                      ./images/portfolio/portfolio-5@1x.jpg 1x,
+                      ./images/portfolio/portfolio-5@2x.jpg 2x
+                    "
                     alt="purple space illustrations"
-                    width="360"
-                    height="300"
+                    width="396"
+                    height="280"
                   />
 
                   <p class="hover-text">
@@ -213,10 +309,14 @@
               <a class="link image-link" href="">
                 <div class="box">
                   <img
-                    src="./images/orange.jpg"
+                    src="./images/portfolio/portfolio-6@1x.jpg"
+                    srcset="
+                      ./images/portfolio/portfolio-6@1x.jpg 1x,
+                      ./images/portfolio/portfolio-6@2x.jpg 2x
+                    "
                     alt="a girl in orange sweater"
-                    width="360"
-                    height="300"
+                    width="396"
+                    height="280"
                   />
 
                   <p class="hover-text">
@@ -238,10 +338,14 @@
               <a class="link image-link" href="">
                 <div class="box">
                   <img
-                    src="./images/white-screenshots.jpg"
+                    src="./images/portfolio/portfolio-7@1x.jpg"
+                    srcset="
+                      ./images/portfolio/portfolio-7@1x.jpg 1x,
+                      ./images/portfolio/portfolio-7@2x.jpg 2x
+                    "
                     alt="futuristic pictures"
-                    width="360"
-                    height="300"
+                    width="396"
+                    height="280"
                   />
 
                   <p class="hover-text">
@@ -260,10 +364,14 @@
               <a class="link image-link" href="">
                 <div class="box">
                   <img
-                    src="./images/netbag.jpg"
+                    src="./images/portfolio/portfolio-8@1x.jpg"
+                    srcset="
+                      ./images/portfolio/portfolio-8@1x.jpg 1x,
+                      ./images/portfolio/portfolio-8@2x.jpg 2x
+                    "
                     alt="netbag with fruits"
-                    width="360"
-                    height="300"
+                    width="396"
+                    height="280"
                   />
 
                   <p class="hover-text">
@@ -282,10 +390,14 @@
               <a class="link image-link" href="">
                 <div class="box">
                   <img
-                    src="./images/coffee.jpg"
+                    src="./images/portfolio/portfolio-9@1x.jpg"
+                    srcset="
+                      ./images/portfolio/portfolio-9@1x.jpg 1x,
+                      ./images/portfolio/portfolio-9@2x.jpg 2x
+                    "
                     alt="coffee"
-                    width="360"
-                    height="300"
+                    width="396"
+                    height="280"
                   />
 
                   <p class="hover-text">
@@ -371,5 +483,14 @@
         </div>
       </div>
     </footer>
+
+    <!-- skript -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
