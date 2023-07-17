@@ -368,7 +368,15 @@ button {
       display: flex;
       align-items: center;
       justify-content: center;
-  } 
+    } 
+    .benefits-title{
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.2;
+     }
+     .benefits-text{
+        font-weight: 400;
+     }
 }
 
 
