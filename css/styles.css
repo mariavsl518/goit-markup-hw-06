@@ -50,7 +50,6 @@ button {
 }
 
 .container {
-    outline:#31D0AA;
     min-width: 320px;
     max-width: 428px;
     padding:0 16px;
@@ -289,7 +288,7 @@ button {
 }
 @media screen and (min-width: 1158px) {
   .section {
-    padding:60px 0;
+    padding:120px 0;
   }
   
 }
